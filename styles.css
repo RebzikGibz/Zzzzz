@@ -1,0 +1,36 @@
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 5px green; }
+    50% { box-shadow: 0 0 20px green; }
+    100% { box-shadow: 0 0 5px green; }
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 5px red; }
+    50% { box-shadow: 0 0 20px red; }
+    100% { box-shadow: 0 0 5px red; }
+}
+
+.input-valid {
+    animation: pulse-green 1s infinite;
+}
+
+.input-invalid {
+    animation: pulse-red 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.bounce-animation {
+    animation: bounce 1s ease infinite;
+    animation-fill-mode: both;
+}
